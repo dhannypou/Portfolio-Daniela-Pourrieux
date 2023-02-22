@@ -70,7 +70,7 @@ html {
 	align-items: center;
 }
 .inicio .contenido-banner {
-	padding: 20px;
+	padding: 40px;
 	background-color: #1e2326;
 	max-width: 350px;
 	margin: auto;
@@ -81,7 +81,7 @@ html {
 	margin-top: 40px;
 	border: 10px solid #1cb698;
 	display: block;
-	width: 80%;
+	width: 50%;
 	margin: auto;
 	border-radius: 100%;
 }
