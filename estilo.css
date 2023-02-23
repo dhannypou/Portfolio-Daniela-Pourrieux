@@ -503,7 +503,7 @@ a {
 .portfolio {
 	background-color: #252a2e;
 	color: #fff;
-	padding: 50px 20px;
+	padding: 40px 20px;
 }
 .portfolio .contenido-seccion {
 	max-width: 1100px;
@@ -522,9 +522,9 @@ a {
 }
 .portfolio .galeria .proyecto {
 	position: relative;
-	max-width: 340px;
+	max-width: 300px;
 	height: fit-content;
-	margin: 10px;
+	margin: 20px;
 	cursor: pointer;
 }
 .portfolio .galeria .proyecto img {
