@@ -270,7 +270,6 @@ html {
 	right: -15px;
 	font-size: 14px;
 }
-
 a {
 	text-decoration: none;
 }
@@ -287,7 +286,6 @@ a {
 		width: 75%;
 	}
 }
-
 .skills .skill .htmlcss {
 	width: 0%;
 	animation: 2s htmlcss forwards;
@@ -300,7 +298,6 @@ a {
 		width: 89%;
 	}
 }
-
 .skills .skill .photoshop {
 	width: 0%;
 	animation: 2s photoshop forwards;
@@ -313,7 +310,6 @@ a {
 		width: 95%;
 	}
 }
-
 .skills .skill .wordpress {
 	width: 0%;
 	animation: 2s wordpress forwards;
@@ -326,7 +322,6 @@ a {
 		width: 81%;
 	}
 }
-
 .skills .skill .drupal {
 	width: 0%;
 	animation: 2s drupal forwards;
@@ -339,7 +334,6 @@ a {
 		width: 55%;
 	}
 }
-
 .skills .skill .comunicacion {
 	width: 0%;
 	animation: 2s comunicacion forwards;
@@ -352,7 +346,6 @@ a {
 		width: 80%;
 	}
 }
-
 .skills .skill .trabajo {
 	width: 0%;
 	animation: 2s trabajo forwards;
@@ -365,7 +358,6 @@ a {
 		width: 70%;
 	}
 }
-
 .skills .skill .creatividad {
 	width: 0%;
 	animation: 2s creatividad forwards;
@@ -378,7 +370,6 @@ a {
 		width: 99%;
 	}
 }
-
 .skills .skill .dedicacion {
 	width: 0%;
 	animation: 2s dedicacion forwards;
@@ -391,7 +382,6 @@ a {
 		width: 65%;
 	}
 }
-
 .skills .skill .proyect {
 	width: 0%;
 	animation: 2s proyect forwards;
