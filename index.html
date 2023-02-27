@@ -13,7 +13,14 @@
 			referrerpolicy="no-referrer"
 			/>
 			<link rel="stylesheet" href="estilo.css" />
+			<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('lW3hjnkRAcAsXQ-Jj')
+</script>
 		<title>Daniela Pourrieux</title>
+	
 	</head>
 	<body>
 		<!-- MENU ENCABEZADO -->
@@ -158,9 +165,11 @@
 						</div>
 					</div>
 				</div>
-				<button href="#">
-					Descargar CV <i class="fa-solid fa-download"></i>
-					<span class="overlay"></span>
+				<button>
+					<a download="MiCurriculum" href="MiCurriculum.pdf">
+						Descargar CV <i class="fa-solid fa-download"></i>
+						<span class="overlay"></span>
+					</a>
 				</button>
 			</div>
 		</section>
@@ -394,16 +403,16 @@
 				<h2>PORTFOLIO</h2>
 				<div class="galeria">
 					<div class="proyecto">
-						<a href="https://gamulancoversbandaenvivo.vercel.app/">
+						<a href="https://gamulancoversbandaenvivo.vercel.app/" target="_blank">
 							<img src="img/p1.png" alt="" />
 							<div class="overlay">
-								<h3>Web Site</h3>
+								<h3>Website for Music Band</h3>
 								<p>JS-HTML-CSS</p>
 							</a>
 						</div>
 					</div>
 					<div class="proyecto">
-						<a href="https://online-nature-pf-front-git-main-ezeluiten.vercel.app/">
+						<a href="https://online-nature-pf-front-git-main-ezeluiten.vercel.app/" target="_blank">
 							<img src="img/p2.png" alt="" />
 							<div class="overlay">
 								<h3>App FullStack</h3>
@@ -412,42 +421,42 @@
 						</div>
 					</div>
 					<div class="proyecto">
-						<a href="https://lista-de-tareas-nine.vercel.app/">
+						<a href="https://lista-de-tareas-nine.vercel.app/" target="_blank">
 							<img src="img/p3.png" alt="" />
 							<div class="overlay">
-								<h3>Lista de Tareas</h3>
+								<h3>Task List</h3>
 								<p>React</p>
 							</a>
 						</div>
 					</div>
 					<div class="proyecto">
-						<a href="https://dapper-fenglisu-b61f00.netlify.app/">
+						<a href="https://dapper-fenglisu-b61f00.netlify.app/" target="_blank">
 							<img src="img/p4.png" alt="" />
 							<div class="overlay">
-								<h3>Caluladora Theme Dark</h3>
+								<h3>Theme Dark Calibrator</h3>
 								<p>JS-HTML-SCSS</p>
 							</a>
 					</div>
 					</div>
 					<div class="proyecto" >
-						<a href="https://stalwart-stardust-a7f70c.netlify.app/">
+						<a href="https://stalwart-stardust-a7f70c.netlify.app/" target="_blank">
 							<img src="img/p5.png" alt="" />
 							<div class="overlay">
-								<h3>Menu Desplegable</h3>
+								<h3>Drop Down Menu</h3>
 								<p>JS-HTML-SCSS</p>
 							</a>
 					</div>
 					</div>
-					<!-- <div class="proyecto">
-						<a href="">
-							<img src="img/p6.jpg" alt="" />
+					<div class="proyecto">
+						<a href="https://cabrera-pourrieux-asoc.vercel.app/" target="_blank">
+							<img src="img/p6.png" alt="" />
 							<div class="overlay">
-								<h3>Diseño Creativo</h3>
-								<p>Fotografía</p>
+								<h3>Website for Lawyers</h3>
+								<p>ReactJs</p>
 							</a>
 					</div>
 					</div>
-					<div class="proyecto">
+					<!--<div class="proyecto">
 						<a href="">
 							<img src="img/p6.jpg" alt="" />
 							<div class="overlay">
@@ -484,21 +493,48 @@
 				<div class="fila">
 					<!-- Formulario -->
 					<div class="col">
-						<input type="text" placeholder="Tú Nombre" />
-						<input type="text" placeholder="Número telefónico" />
-						<input type="text" placeholder="Dirección de correo" />
-						<input type="text" placeholder="Tema" />
-						<textarea
-							name=""
-							id=""
+						<form id="form">
+							<div class="field">
+							  <label for="from_name">Nombre</label>
+							  <input type="text" name="from_name" id="from_name">
+							</div>
+							<div class="field">
+								<label for="email_id">Correo</label>
+								<input type="text" name="email_id" id="email_id">
+							  </div>			
+							<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+							placeholder="Mensaje"
+						></textarea>			  
+							<!-- <div class="field">
+							  <label for="message">Mensaje</label>
+							  <input type="text" name="message" id="message">
+							</div> -->
+							<button id="button" type="submit" value="Send Email">
+								Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+								<span class="overlay"></span>						
+							</button>
+							<!-- <input type="submit" id="button" value="Send Email" > -->
+						  </form>
+						<!-- <form action="enviar.php" method="post">
+							<input type="text" name="name" id="name" placeholder="Nombre">
+							<input type="text" name="email" id="email" placeholder="Correo">
+							<input type="text" name="phone" id="subject" placeholder="Telefono">
+							<textarea
+							name="message"
+							id="mensaje"
 							cols="30"
 							rows="10"
 							placeholder="Mensaje"
 						></textarea>
-						<button>
+						<button id="button" type="submit" value="Send Email">
 							Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-							<span class="overlay"></span>
+							<span class="overlay"></span>						
 						</button>
+					   </form> -->
 					</div>
 					<!-- Mapa -->
 					<div class="col">
@@ -544,7 +580,6 @@
 				></a>
 			</div>
 		</footer>
-
 		<script src="script.js"></script>
 	</body>
 </html>
